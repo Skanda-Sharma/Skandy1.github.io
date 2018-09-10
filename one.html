@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart University</title>
+		<!-- Latest compiled and minified CSS -->
+<!--link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css"-->
+<link rel="stylesheet" href="new/bootstrap.css" >
+<script src="js/jquery.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.js" ></script>
+<style >
+.carousel-inner img {
+  margin: auto;
+}
+.flex-container {
+   display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+	section {
+		width: 100vw;
+		height: 100vh
+	}
+	h1 {
+		padding: 0;
+		margin: 0;
+	}
+
+	.col-text {
+		column-count: 2;
+	}
+
+	.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" >
+	<nav class="navbar navbar-fixed-top navbar-inverse">
+  	<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand"><font color="#FFFFF" size="5px" > Smart University</font> </a>
+			</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li ><a href="#home"> <span class="glyphicon glyphicon-home"> </span>  Home  </a></li>
+			<li><a href="#wash"><span class="glyphicon glyphicon-tags ">  </span>   Washington</a> </li>
+			<li><a href="#events"><span class="glyphicon glyphicon-qrcode">  </span>   Events</a></li>
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-earphone"></span> Help <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#about"><span class="glyphicon glyphicon-user">  </span> About Us</a>  </li>
+							<li><a href="#contact"><span class="glyphicon glyphicon-phone-alt">  </span>Contact us</a> </li>
+						</ul>
+					</li>
+			<li><a  data-toggle="modal" data-target="#modal1"><span class="glyphicon glyphicon-log-in"></span>  Log In</a> </li>
+		</ul>
+		</div>
+  </nav>
+		<div class="modal fade" id="modal1" style="background: url(images/au.jpg); background-size: 100% 100%"> <!-- Log in Modal -->
+			<div class="modal-dialog">
+				<div class="modal-content" style="background-color: #AF0A0A">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal" >&times;</button>
+						<h3  style="color: white"> Log In</h3>
+					</div>
+					<div class="modal-body">
+						<form action="tv.php" method="POST">
+							<div class="form-group">
+								<!--label for="name" style="color: white" ><h3>Register Number </h3></label-->
+								<input type="text" class="form-control" name="reg" placeholder="Register Number">
+							</div>
+							<div class="form-group">
+								<!--label for="name" style="color: white"><h3>Password </h3></label-->
+								<input type="password" class="form-control" name="pass" placeholder="Password">
+							</div>
+					<div class="form-group" align="center">
+						<button class="btn btn-primary btn-lg">Submit</button>
+					</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<section id="home" style="background: url(images/6.jpg); background-size: 100% 100%"> <!-- Home-->
+			<img src="images/smrt.png" height="50px" width="150px">
+
+		</section>
+			
+		<section id="wash" style="background: lightblue">
+			<img src="images/steps.jpg" width="99%">						
+		</section>
+
+		<section id="events" >
+			<div class="container-fluid " style="padding: 50px">
+		<div id="carousel1" class="carousel slide" data-ride="carousel" style="size: 70%" >
+			<ol class="carousel-indicators"> 
+				<li data-target="#carousel1" data-slide-to="0" class="0"></li>
+				<li data-target="#carousel1" data-slide-to="1"></li>
+				<li data-target="#carousel1" data-slide-to="2"></li>
+				<li data-target="#carousel1" data-slide-to="3"></li>
+				 
+			</ol>
+
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/sing.jpg" width="80%" height="100%">
+					<div class="carousel-caption">
+						<h3>Sing along</h3>
+						<p>Christ Choir</p>
+					</div>
+				</div>
+
+				<div class="item ">
+					<img src="images/dance.jpg" width="90%">
+					<div class="carousel-caption">
+						<h3>Dhristi</h3>
+						<p>Golden Jubilee dance </p>
+					</div>
+				</div>
+
+				<div class="item ">
+					<img src="images/graduation.jpg" width="80%">
+					<div class="carousel-caption">
+						<h3>Convocation</h3>
+						<p>Final year graduation ceremony</p>
+					</div>
+				</div>
+
+				<div class="item ">
+					<img src="images/ncc.jpg" width="80%">
+					<div class="carousel-caption">
+						<h3>NCC-Udupi</h3>
+						<p>NCC camp to Udupi</p>
+					</div>
+				</div>
+			</div>
+
+			<a href="#carousel1" data-slide="prev" class="left carousel-control">
+				<span class="glyphicon glyphicon-chevron-left" area-hidden="true"></span>
+			</a>
+
+			<a href="#carousel1" data-slide="next" class="right carousel-control">
+				<span class="glyphicon glyphicon-chevron-right" area-hidden="true"></span>
+			</a>
+		</div>
+
+	</div>
+	
+		</section>
+
+		<section id="contact" class="container"  >
+			<div class="container-fluid">
+				
+		<div class="col-text " style="padding: 100px">Smart University, as we all know that IOT and AI are the major topics in which our industry is working. We as a team are bringing up new ideas about how and where can we improve our society in a faster manner. There a millions of idea and thousands of workers who are willing to work on a particular project but the main problem lies where we can not implement the peoject in a short time. All the ideas are for long term but the implementation time is vast.</div> <br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-primary col-md-6">
+				<div class="panel-heading">
+					<h4>Profile</h4>
+				</div>
+				<div class="panel-body">
+					<ul class="lead text-left ">
+						<li>Amogh H M</li>
+						<li>Daryl Machado</li>
+						<li>Samantha Fernandez</li>
+						<li>Skanda Sharma</li>
+					</ul> 
+				</div>
+				<div class="panel-footer"> Contact us : <a href="#">smartuni@gmail.com</a> </div>
+
+			 </div>
+			</div>
+			
+		</div>
+
+		<div class="page-header text-center">
+			<h2 style="color: #ffffff">Contact Us</h2>
+		</div>
+		<form class="col-md-5 col-md-offset-4" >
+			<div class="form-group">
+				<input type="text" name="nam" placeholder="First Name" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<input type="text" name="lnam" placeholder="Last Name" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<input type="email" name="em" placeholder="Email ID" class="form-control">
+			</div>
+			<div class="form-group">
+				<input type="text" name="sub" placeholder="Subject" class="form-control">
+			</div>
+			<div class="form-group">
+				<textarea class="form-control" rows="3" placeholder="Comments"></textarea>
+			</div>
+				<div>
+					<button class="btn btn-success btn-block" >Submit</button>
+				</div>			
+		</form>
+			</div>
+	</section>
+</body>
+</html>
